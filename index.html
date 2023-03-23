@@ -1,147 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reality TV Show Trivia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="directions">
-        <h1>Do you know your Reality TV Show memes?</h1> 
-        <h2>Take this quiz and find out!</h2>
-        <button class="start">Start</button>
+      <h1>Do you know your Reality TV Show memes?</h1>
+      <h2>Take this quiz and find out!</h2>
+      <button class="start">Start</button>
     </div>
 
-    <!-- <div class="questions">
-            <div class="q">
-                <img src="assets/jerseyshore.gif" alt="sammi-sweetheart-and-ron">
-                    <h3>Which TV Show is this gif from?</h3>
-                    <div class="answer">
-                            <div class="option incorrect">Real World</div>
-                            <div class="option incorrect">Floribama Shore</div>
-                            <div class="option correct">Explains and Reviews laws</div>
-                            <div class="option incorrect">Makes treaties</div>
+    <div class="questions">
+        <div class="q">
+            <h3>Which TV Show is this gif from?</h3>
+            <img src="assets/jerseyshore.gif" alt="sammi-sweetheart-and-ron">
+                <div class="answer">
+                    <button class="option incorrect">Real World</button>
+                    <button class="option incorrect">Floribama Shore</button>
+                    <button class="option correct">Jersey Shore</button>
+                    <button class="option incorrect">The Challenge</button>
                     </div>         
-            </div>
+        </div>
 
-            <div class="q">
-                    <img src="assets/kourtney.gif" alt="kardashians">
-                    <h3>Which Kardashian is saying this iconic quote?</h3>
-                    <div class="answer">
-                            <div class="option incorrect">Khloe</div>
-                            <div class="option incorrect">Kris</div>
-                            <div class="option incorrect">Kylie</div>
-                            <div class="option correct">Kourtney</div>
-                    </div>
-            </div>
+        <div class="q">
+            <h3>Which Kardashian is saying this iconic quote?</h3>
+            <img src="assets/kourtney.gif" alt="kardashians">
+                <div class="answer">
+                    <button class="option incorrect">Khloe</button>
+                    <button class="option incorrect">Kris</button>
+                    <button class="option incorrect">Kylie</button>
+                    <button class="option correct">Kourtney</button>
+                </div>
+        </div>
             
 
 
-            <div class="q">
-                   <img src="assets/tyra.gif" alt="tyra-banks">
-                    <h3>Which TV show is this quote from?</h3>
-                    <div class="answer">
-                            <div class="option incorrect">American Idol</div>
-                            <div class="option correct">America's Next Top Model</div>
-                            <div class="option incorrect">America's Got Talent</div>
-                            <div class="option incorrect">American Idol</div>
-                    </div>
-            </div>
+        <div class="q">
+            <h3>Which TV show is this quote from?</h3>
+            <img src="assets/tyra.gif" alt="tyra-banks">
+                <div class="answer">
+                    <button class="option incorrect">American Idol</button>
+                    <button class="option correct">America's Next Top Model</button>
+                    <button class="option incorrect">America's Got Talent</button>
+                    <button class="option incorrect">American Idol</button>
+                </div>
+        </div>
     
 
-            <div class="q">
-                   <img src="assets/tim-gunn.gif" alt="tim-gunn">
-                    <h3>Which TV show let Tim Gunn be his sassy self with this quote?</h3>
-                    <div class="answer">
-                            <div class="option correct">Project Runway</div>
-                            <div class="option incorrect">Tim Gunn's Guide to Style</div>
-                            <div class="option incorrect">Ugly Betty</div>
-                            <div class="option incorrect">Making the Cut</div>
-                    </div>
+        <div class="q">
+            <h3>Which TV show let Tim Gunn be his sassy self with this quote?</h3>
+            <img src="assets/tim-gunn.gif" alt="tim-gunn">
+            <div class="answer">
+                <button class="option correct">Project Runway</button>
+                <button class="option incorrect">Tim Gunn's Guide to Style</button>
+                <button class="option incorrect">Ugly Betty</button>
+                <button class="option incorrect">Making the Cut</button>
             </div>
+        </div>
             
     
 
-            <div class="q">
-                    <img src="assets/cringe.gif" alt="cringe-kiss">
-                    <h3>What TV show aired the world's most cringe worthy kiss?</h3>
-                    <div class="answer">
-                            <div class="option incorrect">Love at First Sight</div>
-                            <div class="option incorrect">Milf Manor</div>
-                            <div class="option correct">Love at First Kiss</div>
-                            <div class="option incorrect">90 Day Fiance</div>
-                    </div>
-            </div>
+        <div class="q">
+            <h3>What TV show aired the world's most cringe worthy kiss?</h3>
+            <img src="assets/cringe.gif" alt="cringe-kiss">
+                <div class="answer">
+                    <button class="option incorrect">Love at First Sight</button>
+                    <button class="option incorrect">Milf Manor</button>
+                    <button class="option correct">Love at First Kiss</button>
+                    <button class="option incorrect">90 Day Fiance</button>
+                </div>
+        </div>
             
 
-            <div class="q">
-                    <img src="assets/view.gif.jpg" alt="best-view">
-                    <h3>Which TLC show had the best view?</h3>
-                    <div class="answer">
-                            <div class="option incorrect">Unexpected</div>
-                            <div class="option incorrect">Seeking Sister Wife</div>
-                            <div class="option incorrect">I Love a Mama's Boy</div>
-                            <div class="option correct">90 Day Fiance</div>
-                    </div> 
-            </div>
+        <div class="q">
+            <h3>Which TLC show had the best view?</h3>
+            <img src="assets/view.gif" alt="best-view">
+                <div class="answer">
+                    <button class="option incorrect">Unexpected</button>
+                    <button class="option incorrect">Seeking Sister Wife</button>
+                    <button class="option incorrect">I Love a Mama's Boy</button>
+                    <button class="option correct">90 Day Fiance</button>
+                </div> 
+        </div>
 
-            <div class="q">
-                    <img src="assets/hottie.gif" alt="microwaving-chicken">
-                    <h3>Which contestant on Flavor of Love thought they could cook a chicken in the microwave?</h3>
-                    <div class="answer">
-                            <div class="option correct">Hottie</div>
-                            <div class="option incorrect">New York</div>
-                            <div class="option incorrect">Hoopz</div>
-                            <div class="option incorrect">Pumpkin</div>
-                    </div>
-            </div>
+        <div class="q">
+            <h3>Which contestant on Flavor of Love thought they could cook a chicken in the microwave?</h3>
+            <img src="assets/hottie.gif" alt="microwaving-chicken">
+                <div class="answer">
+                    <button class="option correct">Hottie</button>
+                    <button class="option incorrect">New York</button>
+                    <button class="option incorrect">Hoopz</button>
+                    <button class="option incorrect">Pumpkin</button>
+                </div>
+        </div>
     
 
-            <div class="q">
-                    <img src="assets/BGC.gif" alt="BCG-contestant">
-                    <h3>Which show did this contestant get no sleep on?</h3>
-                    <div class="answer">
-                            <div class="option incorrect">Love & Hip Hop</div>
-                            <div class="option incorrect">Basketball Wives</div>
-                            <div class="option correct">Bad Girls Club</div>
-                            <div class="option incorrect">The Real Housewives of Atlanta</div>
-                    </div>
-            </div>
+        <div class="q">
+            <h3>Which show did this contestant get no sleep on?</h3>
+            <img src="assets/BGC.gif" alt="BCG-contestant">
+                <div class="answer">
+                    <button class="option incorrect">Love & Hip Hop</button>
+                    <button class="option incorrect">Basketball Wives</button>
+                    <button class="option correct">Bad Girls Club</button>
+                    <button class="option incorrect">The Real Housewives of Atlanta</button>
+                </div>
+        </div>
                     
 
-            <div class="q">
-                    <img src="assets/gordon.gif" alt="gordon-ramsey">
-                    <h3>Which TV show did Gordon Ramsey make his least favorite sandwich on?</h3>
-                    <div class="answer">
-                            <div class="option incorrect">Master Chef</div>
-                             <div class="option correct">Kitchen Nightmares</div>
-                            <div class="option incorrect">Hell's Kitchen</div>
-                            <div class="option incorrect">The F Word</div>
-                    </div>
+        <div class="q">
+            <h3>Which TV show did Gordon Ramsey make his least favorite sandwich on?</h3>
+            <img src="assets/gordon.gif" alt="gordon-ramsey">
+                <div class="answer">
+                    <button class="option incorrect">Master Chef</button>
+                    <button class="option correct">Kitchen Nightmares</button>
+                    <button class="option incorrect">Hell's Kitchen</button>
+                    <button class="option incorrect">The F Word</button>
+                </div>
                     
-            </div>   
+        </div>   
 
-            <div class="q"> 
-                    <img src="assets/dog-wine.gif" alt="dog-drinking-wine">
-                    <h3>Which TV show encouraged dogs getting drunk?</h3>
-                    <div class="answer">
-                            <div class="option incorrect">Love on the Spectrum</div>
-                            <div class="option incorrect">The Ultimatium</div>
-                            <div class="option incorrect">Dating Around</div>
-                            <div class="option correct">Love is Blind</div>
-                    </div>
-            </div>  
+        <div class="q"> 
+            <h3>Which TV show encouraged dogs getting drunk?</h3>
+            <img src="assets/dog-wine.gif" alt="dog-drinking-wine">
+                <div class="answer">
+                    <button class="option incorrect">Love on the Spectrum</button>
+                    <button class="option incorrect">The Ultimatium</button>
+                    <button class="option incorrect">Dating Around</button>
+                    <button class="option correct">Love is Blind</button>
+                </div>
+        </div>  
 
-            <div class="q resultQ">
-                    <div class="result"></div>
-                    <div class="restart">Try Again</div>
-            </div>
-    </div> -->
-</body>
+        <div class="q resultQ">
+            <div class="result"></div>
+            <div class="restart">Try Again</div>
+        </div>
+    </div>
+  </body>
 </html>

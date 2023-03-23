@@ -10,24 +10,31 @@ body{
     font-size: 30px;
 }
 
+h1 {
+    padding-top: 18%;
+}
+
 h1, h2{
     text-align: center;
 }
 
-button {
-    margin-left: 48%;
+.start {
+    margin-left: 47%;
     background-color: rgb(151, 212, 212);
     font-family: 'Nerko One', cursive;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 30px;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-button:hover {
+.start:hover {
     border: 2px solid white;
 }
 
-h1 {
-    padding-top: 18%;
+.answer{
+    display: grid;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-columns: repeat(2 1fr);
+
 }
