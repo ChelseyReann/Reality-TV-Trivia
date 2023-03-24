@@ -1,8 +1,9 @@
 let start = document.querySelector(".start");
 let instructions = document.querySelector(".instructions");
 let finalScreen = document.querySelector(".final");
-let result = document.querySelector(".result")
-let finalScore = document.querySelector(".finalScore")
+let result = document.querySelector(".result");
+let finalScore = document.querySelector(".finalScore");
+let restart = document.querySelector(".restart")
 
 //question & options return an array
 let question = document.querySelectorAll(".question");
@@ -48,44 +49,52 @@ options.forEach((option) => {
 function calculateScore(e) {
   console.log(e.target.classList.value);
   if (e.target.classList.value === "options correct") {
-    score += 10;
+    score += 1;
     console.log(score);
     if (score === 0){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show novice. Go watch some trash TV. Any trash TV. Please."
     } else if (score === 1){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show novice. Go watch some trash TV. Any trash TV. Please."
     } else if (score === 2){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show beginner. Please go binge watch Jersey Shore or Love is Blind and feel better about yourself."
     } else if (score === 3){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show beginner. Please go binge watch Jersey Shore or Love is Blind and feel better about yourself."
     } else if (score === 4){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show newcomer. Go watch some more trash TV. Please."
     } else if (score === 5){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show newcomer. Go watch some more trash TV. Please."
     } else if (score === 6){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show fan. Go watch some more trash TV. Please."
     } else if (score === 7){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show fan. Go watch some more trash TV. Please."
     } else if (score === 8){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show expert! Let's talk about out favorite shows together!"
     } else if (score === 9){
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show expert. Let's talk about our favorite shows together!"
     } else if (score === 10) {
-        finalScore.innerText = `You got ${score}/10 right!`
+        finalScore.innerText = `You knew ${score}/10 memes!`
         result.innerText = "You're a Reality TV Show connoisseur! Let's talk about our favorite shows together!"
     }
   } else {
     console.log(score);
   }
 }
+
+restart.addEventListener("click", () =>{
+    score = 0
+    currentQuestion = 0
+    previousQuestion = 0
+    startGame()
+    finalScreen.style.display = "none"
+})
 

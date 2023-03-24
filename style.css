@@ -41,7 +41,6 @@ h1, h2{
     font-size: 30px;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-left: 43%;
 }
 
 .options {
@@ -68,6 +67,18 @@ h1, h2{
 
 .final {
     display: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2rem;
+}
+
+.result{
+    margin-top: 5%;
+}
+
+.restart {
+    margin-top: 5%;
 }
 
 img{
