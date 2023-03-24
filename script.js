@@ -20,12 +20,10 @@ options.forEach((option) => {
     option.addEventListener("click", nextQuestion)
 })
 
-function nextQuestion(e){
-    e.preventDefault()
+function nextQuestion(){
     previousQuestion = currentQuestion
     currentQuestion++
-    console.log(question[currentQuestion])
     question[previousQuestion].style.display = "none"
-    question[currentQuestion].style.disply = "block"
+    question[currentQuestion].style.display = "block"
 
 }

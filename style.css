@@ -47,7 +47,6 @@ h1, h2{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-
 }
 
 .question{
