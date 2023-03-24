@@ -30,7 +30,7 @@ h1, h2{
 
 .start:hover {
     border: 2px solid white;
-    background-color: rgb(61, 114, 168);
+    background-color: rgb(151, 212, 212);
 }
 
 .restart {
@@ -51,6 +51,11 @@ h1, h2{
     font-size: 30px;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.options:hover {
+    background-color: rgb(199, 55, 153);
+    border: 2px solid white;
 }
 
 .answers{
