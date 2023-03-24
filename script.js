@@ -44,63 +44,48 @@ function nextQuestion() {
 options.forEach((option) => {
   option.addEventListener("click", calculateScore);
 });
+
 function calculateScore(e) {
   console.log(e.target.classList.value);
   if (e.target.classList.value === "options correct") {
     score += 10;
     console.log(score);
     if (score === 0){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show novice. Go watch some trash TV. Any trash TV. Please."
-    } else if (score === 10){
+    } else if (score === 1){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show novice. Go watch some trash TV. Any trash TV. Please."
-    } else if (score === 20){
+    } else if (score === 2){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show beginner. Please go binge watch Jersey Shore or Love is Blind and feel better about yourself."
-    } else if (score === 30){
+    } else if (score === 3){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show beginner. Please go binge watch Jersey Shore or Love is Blind and feel better about yourself."
-    } else if (score === 40){
+    } else if (score === 4){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show newcomer. Go watch some more trash TV. Please."
-    } else if (score === 50){
+    } else if (score === 5){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show newcomer. Go watch some more trash TV. Please."
-    } else if (score === 60){
+    } else if (score === 6){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show fan. Go watch some more trash TV. Please."
-    } else if (score === 70){
+    } else if (score === 7){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show fan. Go watch some more trash TV. Please."
-    } else if (score === 80){
+    } else if (score === 8){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show expert! Let's talk about out favorite shows together!"
-    } else if (score === 90){
+    } else if (score === 9){
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show expert. Let's talk about our favorite shows together!"
-    } else if (score === 100) {
+    } else if (score === 10) {
+        finalScore.innerText = `You got ${score}/10 right!`
         result.innerText = "You're a Reality TV Show connoisseur! Let's talk about our favorite shows together!"
     }
   } else {
     console.log(score);
   }
 }
-
-// function showScore(){
-//     if (score === 0){
-//         console.log("You're a Reality TV Show novice. Go watch some trash TV. Any trash TV. Please.")
-//     } else if (score === 10){
-//         console.log("You're a Reality TV Show novice. Go watch some trash TV. Any trash TV. Please.")
-//     } else if (score === 20){
-//         console.log("You're a Reality TV Show beginner. Please go binge watch Jersey Shore or Love is Blind and feel better about yourself.")
-//     } else if (score === 30){
-//         console.log("You're a Reality TV Show beginner. Please go binge watch Jersey Shore or Love is Blind and feel better about yourself.")
-//     } else if (score === 40){
-//         console.log("You're a Reality TV Show newcomer. Go watch some more trash TV. Please.")
-//     } else if (score === 50){
-//         console.log("You're a Reality TV Show newcomer. Go watch some more trash TV. Please.")
-//     } else if (score === 60){
-//         console.log("You're a Reality TV Show fan. Go watch some more trash TV. Please.")
-//     } else if (score === 70){
-//         console.log("You're a Reality TV Show fan. Go watch some more trash TV. Please.")
-//     } else if (score === 80){
-//         console.log("You're a Reality TV Show expert! Let's talk about out favorite shows together!")
-//     } else if (score === 90){
-//         console.log("You're a Reality TV Show expert. Let's talk about our favorite shows together!")
-//     } else if (score === 100) {
-//         console.log("You're a Reality TV Show connoisseur! Let's talk about our favorite shows together!")
-//     }
-// }
-//  showScore()
 
