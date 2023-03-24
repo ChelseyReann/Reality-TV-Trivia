@@ -34,9 +34,7 @@ h1, h2{
 }
 
 .options {
-    /* margin-left: 47%; */
     background-color: rgb(151, 212, 212);
-    /* margin-right: 75%; */
     text-align: left;
     font-family: 'Nerko One', cursive;
     border-radius: 5px;
@@ -55,6 +53,7 @@ h1, h2{
 .question{
     display: none;
     text-align: center;
+    margin-top: 2.75rem;
 }
 
 .final {
@@ -62,6 +61,7 @@ h1, h2{
 }
 
 img{
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     max-width: 100%;
+    box-shadow: 5px 5px 5px grey;
 }
