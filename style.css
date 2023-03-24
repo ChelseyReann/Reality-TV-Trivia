@@ -33,6 +33,17 @@ h1, h2{
     background-color: rgb(61, 114, 168);
 }
 
+.restart {
+    background-color: rgb(151, 212, 212);
+    text-align: left;
+    font-family: 'Nerko One', cursive;
+    border-radius: 5px;
+    font-size: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 43%;
+}
+
 .options {
     background-color: rgb(151, 212, 212);
     text-align: left;
