@@ -51,64 +51,65 @@ options.forEach((option) => {
 
 //calculates score only if the button pressed is the correct answer
 function calculateScore(e) {
-  console.log(e.target.classList.value);
+//   console.log(e.target.classList.value);
   if (e.target.classList.value === "options correct") {
     score += 1;
     if (score === 0) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show novice. Go watch some trash TV. Any trash TV. Please.";
+        "Seems like Reality TV isn't your thing. I'm not judging but maybe you should go back to living under your rock.";
     } else if (score === 1) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show novice. Go watch some trash TV. Any trash TV. Please.";
+        "Seems like Reality TV isn't your thing. I'm not judging but maybe you should go back to living under your rock.";
     } else if (score === 2) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show beginner. Please go binge watch Jersey Shore or Love is Blind and feel better about yourself.";
+        "Seems like Reality TV isn't your thing. I'm not judging but maybe you should go back to living under your rock.";
     } else if (score === 3) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show beginner. Please go binge watch Jersey Shore or Love is Blind and feel better about yourself.";
+        "You've watched some Reality TV but there is so much more to discover! Go binge watch some Jersey Shore or Love is Blind and feel better about yourself.";
     } else if (score === 4) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show newcomer. Go watch some more trash TV. Please.";
+        "You've watched some Reality TV but there is so much more to discover! Go binge watch some Jersey Shore or Love is Blind and feel better about yourself.";
     } else if (score === 5) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show newcomer. Go watch some more trash TV. Please.";
+        "You've watched some Reality TV but there is so much more to discover! Go binge watch some Jersey Shore or Love is Blind and feel better about yourself.";
     } else if (score === 6) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show fan. Go watch some more trash TV. Please.";
+        "Okay you Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
     } else if (score === 7) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show fan. Go watch some more trash TV. Please.";
+        "Okay you Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
     } else if (score === 8) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show expert! Let's talk about out favorite shows together!";
+        "Okay you Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
     } else if (score === 9) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show expert. Let's talk about our favorite shows together!";
+        "Hello there you Reality TV Show expert! Let's be friends and talk about our favorite shows together!";
     } else if (score === 10) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You're a Reality TV Show connoisseur! Let's talk about our favorite shows together!";
+        "Hello there you Reality TV Show expert! Let's be friends and talk about our favorite shows together!";
     }
   }
 }
 
-//restarts the trivia at the instructions page
+//restarts the trivia at the first question
 restart.addEventListener("click", () => {
   score = 0;
   currentQuestion = 0;
   previousQuestion = 0;
   finalScreen.style.display = "none";
-  instructions.style.display = "block";
+  question[currentQuestion].style.display = "block";
+  //instructions.style.display = "block";
   //removes the background color of the buttons on the previous try
   options.forEach((option) => {
     option.style.backgroundColor = "";
