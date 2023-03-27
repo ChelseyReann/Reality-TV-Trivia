@@ -69,6 +69,11 @@ h1, h2{
     padding-right: 10rem;
 }
 
+.restart:hover {
+    background-color: rgb(199, 55, 153);
+    border: 2px solid white;
+}
+
 .question{
     display: none;
     text-align: center;
