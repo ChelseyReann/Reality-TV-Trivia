@@ -26,7 +26,7 @@ function startGame() {
   instructions.style.display = "none";
 }
 
-//iterate over each option and add an event listener that will take you to the next question page
+//iterate over each option and add an event listener that will take you to the next question page. included a set timeout for the next question function so you can see the flash of red or green depending on if the answer is correct
 options.forEach((option) => {
   option.addEventListener("click", () => setTimeout(nextQuestion, 500));
 });
@@ -54,7 +54,6 @@ function calculateScore(e) {
   console.log(e.target.classList.value);
   if (e.target.classList.value === "options correct") {
     score += 1;
-    console.log(score);
     if (score === 0) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
@@ -100,12 +99,10 @@ function calculateScore(e) {
       result.innerText =
         "You're a Reality TV Show connoisseur! Let's talk about our favorite shows together!";
     }
-  } else {
-    console.log(score);
   }
 }
 
-//restarts the trivia at the first question
+//restarts the trivia at the instructions page
 restart.addEventListener("click", () => {
   score = 0;
   currentQuestion = 0;
@@ -118,12 +115,14 @@ restart.addEventListener("click", () => {
   });
 });
 
+//adds a red background color for incorrect answers
 incorrectAnswers.forEach((incorrect) => {
   incorrect.addEventListener("click", () => {
     incorrect.style.backgroundColor = "red";
   });
 });
 
+//adds a green background color for correct answers
 correctAnswers.forEach((correct) => {
   correct.addEventListener("click", () => {
     correct.style.backgroundColor = "green";
