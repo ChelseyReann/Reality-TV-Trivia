@@ -57,19 +57,19 @@ function calculateScore(e) {
     if (score === 0) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "Seems like Reality TV isn't your thing. I'm not judging but maybe you should go back to living under your rock.";
+        "Ok boomer. Reality TV just isn't your thing and that's totally fine. Enjoy living under your rock!";
     } else if (score === 1) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "Seems like Reality TV isn't your thing. I'm not judging but maybe you should go back to living under your rock.";
+        "Ok boomer. Reality TV just isn't your thing and that's totally fine. Enjoy living under your rock!";
     } else if (score === 2) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "Seems like Reality TV isn't your thing. I'm not judging but maybe you should go back to living under your rock.";
+        "Ok boomer. Reality TV just isn't your thing and that's totally fine. Enjoy living under your rock!";
     } else if (score === 3) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "You've watched some Reality TV but there is so much more to discover! Go binge watch some Jersey Shore or Love is Blind and feel better about yourself.";
+        "Ok boomer. Reality TV just isn't your thing and that's totally fine. Enjoy living under your rock!";
     } else if (score === 4) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
@@ -81,23 +81,23 @@ function calculateScore(e) {
     } else if (score === 6) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "Okay you Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
+        "You've watched some Reality TV but there is so much more to discover! Go binge watch some Jersey Shore or Love is Blind and feel better about yourself.";
     } else if (score === 7) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "Okay you Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
+        "You must be a Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
     } else if (score === 8) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "Okay you Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
+        "You must be a Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
     } else if (score === 9) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "Hello there you Reality TV Show expert! Let's be friends and talk about our favorite shows together!";
+        "You must be a Reality TV show fan! You definitely know which Kardashian is which! Keep up with the drama and you'll be on your way to being an expert.";
     } else if (score === 10) {
       finalScore.innerText = `You knew ${score}/10 memes!`;
       result.innerText =
-        "Hello there you Reality TV Show expert! Let's be friends and talk about our favorite shows together!";
+        "Finally another Reality TV Show expert like me! Let's be friends and talk about our favorite shows together!";
     }
   }
 }
