@@ -5,6 +5,7 @@ let result = document.querySelector(".result");
 let finalScore = document.querySelector(".finalScore");
 let restart = document.querySelector(".restart");
 
+//creates an array of the incorrect and correct answers
 let incorrectAnswers = document.querySelectorAll(".incorrect");
 let correctAnswers = document.querySelectorAll(".correct");
 
