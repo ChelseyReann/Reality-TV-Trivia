@@ -22,7 +22,7 @@ My expansive knowledge of Reality TV was finally useful for something!
 
 
 ## Connect with Me!
-[LinkedIn](https://www.linkedin.com/in/chelsey-alphonso-84067353/)
+[LinkedIn](https://www.linkedin.com/in/chelsey-alphonso)
 
 [Portfolio](https://chelseyreann.github.io/index.html)
 
