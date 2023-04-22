@@ -14,7 +14,7 @@ I worked with HTML, CSS and JavaScript to create a fun trivia game about a topic
 
 Click the link below ⬇️
 
-[Reality TV Trivia Game](https://chelseyreann.github.io/Reality-TV-Trivia/)
+[Reality TV Trivia Game](https://chelseyreann.github.io/Trivia//)
 
 ## Resources
 
